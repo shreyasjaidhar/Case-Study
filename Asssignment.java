@@ -55,13 +55,13 @@ public class Assignment extends globalDriver{
 		System.out.println("alert message is "+alertmsg3);
 		driver.switchTo().alert().accept();
 		
-		driver.findElement(By.id("txtEmail")).sendKeys("mohan.gond");
+		driver.findElement(By.id("txtEmail")).sendKeys("shreyas.jaidhar");
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg4=driver.switchTo().alert().getText();
 		System.out.println("alert message is "+alertmsg4);
 		driver.switchTo().alert().accept();
 		driver.findElement(By.id("txtEmail")).clear();
-		driver.findElement(By.id("txtEmail")).sendKeys("mohangond06@gmail.com");
+		driver.findElement(By.id("txtEmail")).sendKeys("shreyasjaidhar@gmail.com");
 		
 		driver.findElement(By.id("btnPayment")).click();
 		String alertmsg5=driver.switchTo().alert().getText();
@@ -74,7 +74,7 @@ public class Assignment extends globalDriver{
 		System.out.println("alert message is "+alertmsg6);
 		driver.switchTo().alert().accept();
 		driver.findElement(By.id("txtPhone")).clear();
-		driver.findElement(By.id("txtPhone")).sendKeys("9448528161");
+		driver.findElement(By.id("txtPhone")).sendKeys("987654321");
 		
 		String address="Brigade Bhuwalka Icon Bangalore Karnataka";
 		driver.findElement(By.xpath("/html/body/div/div/form/table/tbody/tr[6]/td[2]/textarea")).sendKeys(address);
